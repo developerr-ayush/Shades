@@ -2,24 +2,24 @@
 
 The name "Shade" can convey a sense of depth, dimension, and variation in color. It also aligns with the idea of using CSS to add visual shading and depth to web pages. 
 
-## about this project 
+## About this project 
  - Shade can refer to the degree of darkness or lightness in a color, which is a key aspect of CSS/SCSS and design.
  - Shade can also refer to a shelter or protection from light, which could be a nod to the idea of the framework providing structure and support for developers.
  - Additionally, "shade" has a cool and trendy vibe that could make it a memorable and catchy name for a framework.
 
-## tables of content
-
-- quick start
-- documentation
-
 ## documentation
 
 There are 2 ways to use this setup
+
+
 ### basic way for beginners
+
 - just download css file and use in your project
 
-### grid division... create your own grid columns
+### Grid division - create your own grid system
 To use this grid system, you can simply add the appropriate class to the parent container of your HTML elements. For example, if you want to create a grid with 3 columns, you can add the class "grid-3" to the parent container. Then, any child elements of that container will be displayed as a grid with 3 columns.
+
+As soon as you add class in parent every child will take 1 column as per your need, you can also customised it too 
 
 Here is an example of how you can use this grid system in your HTML code:
 ```
@@ -32,6 +32,29 @@ Here is an example of how you can use this grid system in your HTML code:
   <div>Element 6</div>
 </div>
 ```
+## Here are all classes options you can add in parent element for creating own grid system
+
+```
+grid-1
+grid-2
+grid-3
+grid-4
+grid-5
+grid-6
+grid-7
+grid-8
+grid-9
+grid-10
+grid-11
+grid-12
+```
+--
+
+- now if you want to customise it according to layout you can also add classes to customise it as per your need
+- lets take example i want to make 80% - 20% of column you will now you will have to use more number of grids to create it as every grid has equal width 
+- that means now you will create grid of 10 by `grid-10` and then in first child you will add `col-8` and in second child you will add `col-2` so it will create 80 - 20 grid
+- you can also use it like `grid-5` in parent element and in first child you will add class `col-4` and in second child you will add `col-1` its totally depends on creativity how you want that to be.
+
 
 ### advanced way
 - make sure that you have installed node and npm in your system 
