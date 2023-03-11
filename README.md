@@ -91,7 +91,7 @@ gap-12 = 60px
         <div class="col-3"></div>
    </div>
 ``` 
-- - creating grid with 3 unequal item with gap of 10px , 60% width for 1st element - 20% width for 2nd and 3rd element
+- creating grid with 3 unequal item with gap of 10px , 60% width for 1st element - 20% width for 2nd and 3rd element
 ```
     <div class="grid-10 gap-2">
         <div class="col-6"></div>
