@@ -61,7 +61,7 @@ grid-12
 if you want to add gaps in between these grid you can use `gap-n` where `n` can range of `1-12` numbers where 1 means 5px of space in between columns
 
 #### here are all classes for gaps in between grid
-```
+``
 gap-1 = 5px
 gap-2 = 10px
 gap-3 = 15px
@@ -74,7 +74,7 @@ gap-9 = 45px
 gap-10 = 50px
 gap-11 = 55px
 gap-12 = 60px
-```
+``
 ### advanced way
 - make sure that you have installed node and npm in your system 
 - clone this repo ```https://github.com/shahayush480/default-setup.git``` 
