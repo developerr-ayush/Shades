@@ -22,34 +22,34 @@ $color-value in $colors {
         >div {
             // width: calc(100% / $width);
             // flex-shrink: 0;
-            background-color: black;
-            height: 200px;
+            // background-color: black;
+            // height: 200px;
         }
     }
-    .gap-#{$width}{
-        gap: calc(5px * $width);
-    }
-    .col-#{$width} {
-        grid-column-start: $width span;
-    }
+    // .gap-#{$width}{
+    //     gap: calc(5px * $width);
+    // }
+    // .col-#{$width} {
+    //     grid-column-start: $width span;
+    // }
 
-    @include mq(md) {
-        .grid-md-#{$width} {
-            display: grid;
-            grid-template-columns: repeat($width, 1fr);
+    // @include mq(md) {
+    //     .grid-md-#{$width} {
+    //         display: grid;
+    //         grid-template-columns: repeat($width, 1fr);
 
-            >div {
-                // width: calc(100% / $width);
-                // flex-shrink: 0;
-                background-color: black;
-                height: 200px;
-            }
-        }
-        .gap-md-#{$width}{
-            gap: calc(5px * $width);
-        }
-        .col-md-#{$width} {
-            grid-column-start: $width span;
-        }
-    }
+    //         >div {
+    //             // width: calc(100% / $width);
+    //             // flex-shrink: 0;
+    //             background-color: black;
+    //             height: 200px;
+    //         }
+    //     }
+    //     .gap-md-#{$width}{
+    //         gap: calc(5px * $width);
+    //     }
+    //     .col-md-#{$width} {
+    //         grid-column-start: $width span;
+    //     }
+    // }
 }
