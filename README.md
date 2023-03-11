@@ -53,9 +53,28 @@ grid-12
 - now if you want to customise it according to layout you can also add classes to customise it as per your need
 - lets take example i want to make 80% - 20% of column you will now you will have to use more number of grids to create it as every grid has equal width 
 - that means now you will create grid of 10 by `grid-10` and then in first child you will add `col-8` and in second child you will add `col-2` so it will create 80 - 20 grid
-- you can also use it like `grid-5` in parent element and in first child you will add class `col-4` and in second child you will add `col-1` its totally depends on creativity how you want that to be.
+- you can also use it like `grid-5` in parent element and in first child you will add class `col-4` and in second child you will add `col-1` it
+- totally depends on creativity how you want that to be.
+- in total we have 12 grid so as per that we also have 12 `col`
 
+### now lets consider space between these grids too 
+if you want to add gaps in between these grid you can use `gap-n` where `n` can range of `1-12` numbers where 1 means 5px of space in between columns
 
+#### here are all classes for gaps in between grid
+```
+gap-1 = 5px
+gap-2 = 10px
+gap-3 = 15px
+gap-4 = 20px
+gap-5 = 25px
+gap-6 = 30px
+gap-7 = 35px
+gap-8 = 40px
+gap-9 = 45px
+gap-10 = 50px
+gap-11 = 55px
+gap-12 = 60px
+```
 ### advanced way
 - make sure that you have installed node and npm in your system 
 - clone this repo ```https://github.com/shahayush480/default-setup.git``` 
