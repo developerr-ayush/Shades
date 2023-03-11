@@ -48,7 +48,7 @@ grid-10
 grid-11
 grid-12
 ```
---
+
 
 - now if you want to customise it according to layout you can also add classes to customise it as per your need
 - lets take example i want to make 80% - 20% of column you will now you will have to use more number of grids to create it as every grid has equal width 
@@ -60,7 +60,8 @@ grid-12
 ### now lets consider space between these grids too 
 if you want to add gaps in between these grid you can use `gap-n` where `n` can range of `1-12` numbers where 1 means 5px of space in between columns
 
-#### here are all classes for gaps in between grid
+#### here are all classes for gaps in between grid which will be added in parent
+
 ```
 gap-1 = 5px
 gap-2 = 10px
@@ -75,6 +76,59 @@ gap-10 = 50px
 gap-11 = 55px
 gap-12 = 60px
 ```
+
+
+### lets get into code for grid system 
+- creating grid with 4 equal items in a row with gap of 15px 
+```
+   <div class="grid-4 gap-3"></div>
+```
+
+- creating grid with 2 unequal item with gap of 5px in 70% width for 1st - 30% width for 2nd element
+```
+  <div class="grid-10 gap-1">
+        <div class="col-7"></div>
+        <div class="col-3"></div>
+   </div>
+``` 
+- - creating grid with 3 unequal item with gap of 10px , 60% width for 1st element - 20% width for 2nd and 3rd element
+```
+    <div class="grid-10 gap-2">
+        <div class="col-6"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+   </div>
+``` 
+- creating grid with 5 items which will be in 2 rows  
+- first element will have 80% of width
+- second element will have 20% of width
+- third, fourth and fifth element will have equal of width in second row
+- ofcourse for this there can be many ways we can use here are 2 ways of it
+- first way for approx
+```
+   <div class="grid-12 gap-2">
+        <div class="col-9"></div>
+        <div class="col-3"></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+   </div>
+```
+- second way for exact
+```
+    <div class="grid-5 gap-1">
+        <div class="col-4"></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="grid-3 gap-1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+```
+
+
+
 ### advanced way
 - make sure that you have installed node and npm in your system 
 - clone this repo ```https://github.com/shahayush480/default-setup.git``` 
