@@ -41,7 +41,7 @@ Here is an example of how you can use this grid system in your HTML code:
 
 
 
-// ignore this it is still in progress
+## ignore below this it is still in progress
 
 This is a SASS code snippet that defines two maps, $colors and $breakpoints.
 
