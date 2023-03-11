@@ -1,0 +1,29 @@
+@use "variables" as *;
+@use "map" as *;
+
+@each $font-name, $font-weight in $font-detail {
+	@font-face {
+		font-family: #{$font-name};
+		src: url("/static-assets/build/fonts/#{$font-name}.eot?v=#{$font-version}");
+		src: url("/static-assets/build/fonts/#{$font-name}?v=#{$font-version}#iefix") format("embedded-opentype"),
+            url("/static-assets/build/fonts/#{$font-name}.woff2?v=#{$font-version}") format("woff2"),
+            url("/static-assets/build/fonts/#{$font-name}.woff?v=#{$font-version}") format("woff"),
+            url("/static-assets/build/fonts/#{$font-name}.ttf?v=#{$font-version}") format("truetype"),
+            url("/static-assets/build/fonts/#{$font-name}.svg#?v=#{$font-version}#{$font-name}") format("svg");
+		font-weight: #{$font-weight};
+		font-style: normal;
+		font-display: swap;
+	}
+}
+
+@font-face {
+    font-family: 'waf-font-icon';
+    src: url('/static-assets/build/fonts/waf-font-icon.eot?v=#{$font-version}');
+    src: url('/static-assets/build/fonts/waf-font-icon.eot?v=#{$font-version}#iefix') format('embedded-opentype'),
+    url('/static-assets/build/fonts/waf-font-icon.woff2?v=#{$font-version}') format('woff2'),
+    url('/static-assets/build/fonts/waf-font-icon.woff?v=#{$font-version}') format('woff'),
+    url('/static-assets/build/fonts/waf-font-icon.ttf?v=#{$font-version}') format('truetype'),
+    url('/static-assets/build/fonts/waf-font-icon.svg?v=#{$font-version}#waf-font-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,38 @@
+
+@use 'sass:map';
+$colors: (
+    // theme colors 
+    'primary-light':#9ce5e9,
+    'primary':#2ec9d1,
+    'primary-dark':#1d7d82,
+    'secondary-light':#7e1c79,
+    'secondary':#d12ec9,
+    'secondary-dark':#e898e4,
+    'accent-light':#84891e,
+    'accent':#c9d12e,
+    'accent-dark':#e3e794,
+
+    // system colors 
+    'pure-white':#fff,
+    'pure-black':#000,
+    'white':#f7f7fa,
+    'black':#212529,
+    'grey':#ccc,
+    'grey-light':#efefef,
+    'grey-dark':#6c757d,
+    'neutral': #28293d,
+    'info': #0163f7,
+    'error': #ff3c3a,
+    'success': #09c270,
+    'warning': #fe8800,
+
+);
+
+$breakpoints: (
+    xs:360px,
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px,
+    xxl:1400px,
+);

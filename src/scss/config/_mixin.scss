@@ -1,0 +1,11 @@
+@use './map' as *;
+@use './variable' as *;
+@use 'sass:map';
+
+// media query 
+@mixin mq($key){
+    $size: map.get($breakpoints,$key);
+    @media (min-width:$size) {
+        @content;
+    }
+}

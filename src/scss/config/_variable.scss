@@ -1,0 +1,8 @@
+@use 'map' as *;
+:root{
+    @each $color-key,$color-value in $colors{
+        --#{$color-key}: #{$color-value};
+    }
+    --base-font-size:10px;
+    --primary-font-regular:arial;   
+}

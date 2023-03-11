@@ -1,0 +1,29 @@
+@use './map' as *;
+@use './variable' as *;
+@use './mixin' as *;
+
+// colors 
+@each $color-key,
+$color-value in $colors {
+    .text-#{$color-key} {
+        color: $color-value;
+    }
+
+    .bg-#{$color-key} {
+        color: $color-value;
+    }
+}
+
+@for $width from 1 through 10 {
+    .flex-m-#{$width} {
+        display: flex;
+        gap: 20px;
+
+        &>div {
+            width: calc(100% / $width);
+            flex-shrink: 0;
+            background-color: black;
+            height: 200px;
+        }
+    }
+}
