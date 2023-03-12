@@ -9,12 +9,12 @@ The name "Shade" can convey a sense of depth, dimension, and variation in color.
 
 ## Key features
 - grid system 
- - grid created using display grid
- - has potential to choose your own grid system you want to follow for a particular section 
- - maximum of 12 grid can be choosed to create it 
- - by just add one class in parent you will able to create grid with equally divided child automatically without adding any class in child
- - gaps between grid are lot easier to use 
- - most of things are controled by parent element 
+  - grid created using display grid
+  - has potential to choose your own grid system you want to follow for a particular section 
+  - maximum of 12 grid can be choosed to create it 
+  - by just add one class in parent you will able to create grid with equally divided child automatically without adding any class in child
+  - gaps between grid are lot easier to use 
+  - most of things are controled by parent element 
 
 There are 2 ways to use this setup
 
