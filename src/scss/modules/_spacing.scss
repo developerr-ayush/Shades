@@ -1,0 +1,39 @@
+@use '../config' as *;
+
+@each $breakpoint,
+$val in $breakpoints {
+    @include mq($breakpoint) {
+        @for $space from 0 through 5 {
+            @if ($breakpoint ==xs) {
+                .m-#{$space} {
+                    margin:calc(#{$space} * var(--base-space))
+                }
+            }
+
+            @else {
+                .m-#{$breakpoint}-#{$space} {
+                    margin:calc(#{$space} * var(--base-space))
+                }
+
+            }
+        }
+        @each $dir,$dir-key in $directions{
+
+        
+            @for $space from 0 through 5 {
+                @if ($breakpoint ==xs) {
+                    .m#{$dir}-#{$space} {
+                        margin#{$dir-key}:calc(#{$space} * var(--base-space))
+                    }
+                }
+
+                @else {
+                    .m#{$dir}-#{$breakpoint}-#{$space} {
+                        margin#{$dir-key}:calc(#{$space} * var(--base-space))
+                    }
+
+                }
+            }
+        }
+    }
+}
