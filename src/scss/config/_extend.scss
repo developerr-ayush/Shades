@@ -3,16 +3,16 @@
 @use './mixin' as *;
 
 // colors 
-@each $color-key,
-$color-value in $colors {
-    .text-#{$color-key} {
-        color: $color-value;
-    }
+// @each $color-key,
+// $color-value in $colors {
+//     .text-#{$color-key} {
+//         color: $color-value;
+//     }
 
-    .bg-#{$color-key} {
-        color: $color-value;
-    }
-}
+//     .bg-#{$color-key} {
+//         color: $color-value;
+//     }
+// }
 
 @each $breakpoint,
 $val in $breakpoints {
@@ -71,27 +71,27 @@ $val in $breakpoints {
     }
 }
 
-@each $breakpoint,
-$val in $breakpoints {
-    @include mq($breakpoint) {
+// @each $breakpoint,
+// $val in $breakpoints {
+//     @include mq($breakpoint) {
 
 
-        @for $space from 0 through 5 {
-            @if ($breakpoint ==xs) {
+//         @for $space from 0 through 5 {
+//             @if ($breakpoint ==xs) {
 
-                .margin-#{$space} {
+//                 .margin-#{$space} {
 
-                    gap:calc(#{$space} * var(--base-space))
-                }
-            }
+//                     gap:calc(#{$space} * var(--base-space))
+//                 }
+//             }
 
-            @else {
-                .gap-#{$breakpoint}-#{$space} {
+//             @else {
+//                 .gap-#{$breakpoint}-#{$space} {
 
-                    gap:calc(#{$space} * var(--base-space))
-                }
+//                     gap:calc(#{$space} * var(--base-space))
+//                 }
 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
