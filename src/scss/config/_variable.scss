@@ -4,5 +4,7 @@
         --#{$color-key}: #{$color-value};
     }
     --base-font-size:10px;
-    --primary-font-regular:arial;   
+    --primary-font-regular:arial; 
+    --base-space:5px;  
 }
+$grid-columns :12;

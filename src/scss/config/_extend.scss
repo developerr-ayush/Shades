@@ -17,17 +17,12 @@ $color-value in $colors {
 @each $breakpoint,
 $val in $breakpoints {
     @include mq($breakpoint) {
-        @for $width from 1 through 12 {
+        @for $width from 1 through $grid-columns {
             @if ($breakpoint ==xs) {
 
                 .grid-#{$width} {
                     display: grid;
                     grid-template-columns: repeat($width, 1fr);
-                }
-
-                .gap-#{$width} {
-                    gap: calc(5px * $width);
-
                 }
 
                 .col-#{$width} {
@@ -40,12 +35,6 @@ $val in $breakpoints {
                 .grid-#{$breakpoint}-#{$width} {
                     display: grid;
                     grid-template-columns: repeat($width, 1fr);
-
-
-                }
-
-                .gap-#{$breakpoint}-#{$width} {
-                    gap: calc(5px * $width);
                 }
 
                 .col-#{$breakpoint}-#{$width} {
@@ -55,4 +44,29 @@ $val in $breakpoints {
         }
     }
 
+}
+
+@each $breakpoint,
+$val in $breakpoints {
+    @include mq($breakpoint) {
+
+
+        @for $space from 0 through 5 {
+            @if ($breakpoint ==xs) {
+
+                .gap-#{$space} {
+
+                    gap:calc(#{$space} * var(--base-space))
+                }
+            }
+
+            @else {
+                .gap-#{$breakpoint}-#{$space} {
+
+                    gap:calc(#{$space} * var(--base-space))
+                }
+
+            }
+        }
+    }
 }

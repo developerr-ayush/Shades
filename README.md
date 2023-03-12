@@ -8,7 +8,7 @@ The name "Shade" can convey a sense of depth, dimension, and variation in color.
  - Additionally, "shade" has a cool and trendy vibe that could make it a memorable and catchy name for a framework.
 
 ## Key features
-- grid system 
+- Grid system 
   - grid created using display grid
   - has potential to choose your own grid system you want to follow for a particular section 
   - maximum of 12 grid can be choosed to create it 
@@ -20,6 +20,20 @@ There are 2 ways to use this setup
 
 ### basic way for beginners
 - just download css file and use in your project
+
+## responsiveness
+
+
+Here's all breakpoint that we have in our shades:
+
+xs: The extra-small breakpoint, which applies to devices with a screen width of 0px or greater (i.e., all devices).
+sm: The small breakpoint, which applies to devices with a screen width of 576px or greater.
+md: The medium breakpoint, which applies to devices with a screen width of 768px or greater.
+lg: The large breakpoint, which applies to devices with a screen width of 992px or greater.
+xl: The extra-large breakpoint, which applies to devices with a screen width of 1200px or greater.
+xxl: The extra-extra-large breakpoint, which applies to devices with a screen width of 1400px or greater.
+
+Developers can use these breakpoint values to write responsive styles for different screen sizes by just adding a class to the element. lets see that in out `grid-system`
 
 ### Grid division - create your own grid system
 To use this grid system, you can simply add the appropriate class to the parent container of your HTML elements. For example, if you want to create a grid with 3 columns, you can add the class "grid-3" to the parent container. Then, any child elements of that container will be displayed as a grid with 3 columns.
@@ -67,20 +81,13 @@ if you want to add gaps in between these grid you can use `gap-n` where `n` can 
 #### here are all classes for gaps in between grid which will be added in parent
 
 ```
+gap-0 = 0
 gap-1 = 5px
 gap-2 = 10px
 gap-3 = 15px
 gap-4 = 20px
 gap-5 = 25px
-gap-6 = 30px
-gap-7 = 35px
-gap-8 = 40px
-gap-9 = 45px
-gap-10 = 50px
-gap-11 = 55px
-gap-12 = 60px
 ```
-
 
 ### lets get into code for grid system 
 - creating grid with 4 equal items in a row with gap of 15px 
@@ -130,6 +137,17 @@ gap-12 = 60px
         <div></div>
     </div>
 ```
+- For making it responsive just add breakpoint after `col-x-y` where x stands for breakpoint and y stands for value
+- for example if you want to show 2 column in a row in mobile device and 4 column in a row in desktop then you will use below code
+```
+    <div class="grid-2 grid-lg-4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+```
+
 
 
 
