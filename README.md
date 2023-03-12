@@ -7,13 +7,18 @@ The name "Shade" can convey a sense of depth, dimension, and variation in color.
  - Shade can also refer to a shelter or protection from light, which could be a nod to the idea of the framework providing structure and support for developers.
  - Additionally, "shade" has a cool and trendy vibe that could make it a memorable and catchy name for a framework.
 
-## documentation
+## Key features
+- #grid system 
+ - grid created using display grid
+ - has potential to choose your own grid system you want to follow for a particular section 
+ - maximum of 12 grid can be choosed to create it 
+ - by just add one class in parent you will able to create grid with equally divided child automatically without adding any class in child
+ - gaps between grid are lot easier to use 
+ - most of things are controled by parent element 
 
 There are 2 ways to use this setup
 
-
 ### basic way for beginners
-
 - just download css file and use in your project
 
 ### Grid division - create your own grid system
@@ -48,7 +53,6 @@ grid-10
 grid-11
 grid-12
 ```
-
 
 - now if you want to customise it according to layout you can also add classes to customise it as per your need
 - lets take example i want to make 80% - 20% of column you will now you will have to use more number of grids to create it as every grid has equal width 
