@@ -70,3 +70,28 @@ $val in $breakpoints {
         }
     }
 }
+
+@each $breakpoint,
+$val in $breakpoints {
+    @include mq($breakpoint) {
+
+
+        @for $space from 0 through 5 {
+            @if ($breakpoint ==xs) {
+
+                .margin-#{$space} {
+
+                    gap:calc(#{$space} * var(--base-space))
+                }
+            }
+
+            @else {
+                .gap-#{$breakpoint}-#{$space} {
+
+                    gap:calc(#{$space} * var(--base-space))
+                }
+
+            }
+        }
+    }
+}

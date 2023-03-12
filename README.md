@@ -26,12 +26,12 @@ There are 2 ways to use this setup
 
 Here's all breakpoint that we have in our shades:
 
-xs: The extra-small breakpoint, which applies to devices with a screen width of 0px or greater (i.e., all devices).
-sm: The small breakpoint, which applies to devices with a screen width of 576px or greater.
-md: The medium breakpoint, which applies to devices with a screen width of 768px or greater.
-lg: The large breakpoint, which applies to devices with a screen width of 992px or greater.
-xl: The extra-large breakpoint, which applies to devices with a screen width of 1200px or greater.
-xxl: The extra-extra-large breakpoint, which applies to devices with a screen width of 1400px or greater.
+- xs: The extra-small breakpoint, which applies to devices with a screen width of 0px or greater (i.e., all devices).
+- sm: The small breakpoint, which applies to devices with a screen width of 576px or greater.
+- md: The medium breakpoint, which applies to devices with a screen width of 768px or greater.
+- lg: The large breakpoint, which applies to devices with a screen width of 992px or greater.
+- xl: The extra-large breakpoint, which applies to devices with a screen width of 1200px or greater.
+- xxl: The extra-extra-large breakpoint, which applies to devices with a screen width of 1400px or greater.
 
 Developers can use these breakpoint values to write responsive styles for different screen sizes by just adding a class to the element. lets see that in out `grid-system`
 

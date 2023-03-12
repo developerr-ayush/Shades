@@ -36,3 +36,22 @@ $breakpoints: (
     xl:1200px,
     xxl:1400px,
 );
+$directions: (
+  t: -top,
+  r: -right,
+  b: -bottom,
+  l: -left,
+  x: -inline,
+  y: -block,
+);
+$flex-spacing: (
+  -sa: space-around,
+  -sb: space-between,
+  -se: space-evenly,
+  -fe: flex-end,
+  -fs: flex-start,
+  -c: center,
+  -s: stretch,
+  -u: unset,
+  -n: null
+);
