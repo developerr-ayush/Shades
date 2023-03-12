@@ -153,8 +153,8 @@ gap-5 = 25px
 
 ### advanced way
 - make sure that you have installed node and npm in your system 
-- clone this repo ```https://github.com/shahayush480/default-setup.git``` 
-- use ```npm install``` and then ```npm start``` to run this repo
+- clone this repo `https://github.com/shahayush480/default-setup.git`
+- use `npm install` and then `npm start` to run this repo
 - here you go with our project setup and now you can customisie most of things in this code and get the code you want in your project 
 
 
