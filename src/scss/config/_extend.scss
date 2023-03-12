@@ -14,43 +14,43 @@ $color-value in $colors {
     }
 }
 
-@for $width from 1 through 12 {
-    .grid-#{$width} {
-        display: grid;
-        grid-template-columns: repeat($width, 1fr);
-    }
+@each $breakpoint,
+$val in $breakpoints {
+    @include mq($breakpoint) {
+        @for $width from 1 through 12 {
+            @if ($breakpoint ==xs) {
 
-    .gap-#{$width} {
-        gap: calc(5px * $width);
+                .grid-#{$width} {
+                    display: grid;
+                    grid-template-columns: repeat($width, 1fr);
+                }
 
-        >div {
-            // width: calc(100% / $width);
-            // flex-shrink: 0;
-            background-color: black;
-            height: 200px;
-        }
-    }
+                .gap-#{$width} {
+                    gap: calc(5px * $width);
 
-    .col-#{$width} {
-        grid-column-start: $width span;
-    }
+                }
 
-    @each $breakpoint,
-    $val in $breakpoints {
-        @include mq($breakpoint) {
-            .grid-#{$breakpoint}-#{$width} {
-                display: grid;
-                grid-template-columns: repeat($width, 1fr);
-
-
+                .col-#{$width} {
+                    grid-column-start: $width span;
+                }
             }
 
-            .gap-#{$breakpoint}-#{$width} {
-                gap: calc(5px * $width);
-            }
+            @else {
 
-            .col-#{$breakpoint}-#{$width} {
-                grid-column-start: $width span;
+                .grid-#{$breakpoint}-#{$width} {
+                    display: grid;
+                    grid-template-columns: repeat($width, 1fr);
+
+
+                }
+
+                .gap-#{$breakpoint}-#{$width} {
+                    gap: calc(5px * $width);
+                }
+
+                .col-#{$breakpoint}-#{$width} {
+                    grid-column-start: $width span;
+                }
             }
         }
     }
