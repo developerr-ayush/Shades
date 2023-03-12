@@ -8,7 +8,7 @@ The name "Shade" can convey a sense of depth, dimension, and variation in color.
  - Additionally, "shade" has a cool and trendy vibe that could make it a memorable and catchy name for a framework.
 
 ## Key features
-- #grid system 
+- grid system 
  - grid created using display grid
  - has potential to choose your own grid system you want to follow for a particular section 
  - maximum of 12 grid can be choosed to create it 
